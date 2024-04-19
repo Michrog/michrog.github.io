@@ -1,6 +1,18 @@
+/* show all divs */
+/* div {
+    border: black 1px solid;
+} */
+
 body {
-    margin: 5%;
-    /* border: 3px solid black; */
+    margin: 0;
+    background-color: #a3b1ff;
+}
+
+.page {
+    margin: 0 6em;
+    padding: 2% 2%;
+    background-color: white;
+    box-shadow: 0 0 1em 0.5em #565e88;
 }
 
 .top {
@@ -10,9 +22,9 @@ body {
     align-items: center;
 }
 
-.top div {
+/* .top div { */
     /* background-color: rgba(0, 0, 255, 0.274); */
-}
+/* } */
 
 .top-img {
     text-align: center;
@@ -30,8 +42,6 @@ body {
 .aboutme {
     margin-top: 1em;
     width: 100%;
-    /* background-color: rgba(0, 0, 255, 0.275); */
-    text-align: center;
     font-family: sans-serif;
 }
 
@@ -49,14 +59,28 @@ body {
     grid-template-rows: auto auto;
     gap: 1em;
     align-items: center;
-    text-align: center;
     padding: 1em;
     margin: 1em;
-    /* background-color: rgba(255, 0, 0, 0.128); */
 }
 
-.aboutme-basic-item img {
-    width: 50%
+.aboutme-basic-item-title {
+    text-align: center;
+}
+
+.aboutme-basic-item-content div {
+    margin: 10px 0;
+}
+
+.pwr-img {
+    text-align: center;
+}
+
+.pwr-img img{
+    width: 20%;
+}
+
+.aboutme-title {
+    text-align: center;
 }
 
 .projects {
@@ -70,9 +94,9 @@ body {
     align-items: center;
 }
 
-.projects-embed {
+/* .projects-embed {
     background-color: green
-}
+} */
 
 .projects-embed object {
     width: 100%;
