@@ -1,1 +1,0 @@
-# michrog.github.io
