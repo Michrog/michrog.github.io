@@ -1,0 +1,20 @@
+.SectionButton {
+    width: 20%;
+    height: 10vh;
+    border: none;
+    transition: 0.16s;
+}
+
+.SectionButton:hover{
+    box-shadow: 0px 0px 2em;
+}
+
+.SectionButton:active{
+    box-shadow: 0px 0px 2em 0.3em;
+}
+
+.Wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vh 0
+}

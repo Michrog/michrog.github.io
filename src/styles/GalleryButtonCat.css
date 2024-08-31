@@ -1,0 +1,14 @@
+.GalleryButtonCat {
+    width: 20%;
+    height: 10vh;
+    border: none;
+    transition: 0.16s;
+}
+
+.GalleryButtonCat:hover{
+    box-shadow: 0px 0px 2em;
+}
+
+.GalleryButtonCat:active{
+    box-shadow: 0px 0px 2em 0.3em;
+}

@@ -1,0 +1,8 @@
+nic w gitbash ani nic takiego
+
+w package.json jest skrypt deploy
+
+po zmianach w src lub gdziekolwiek wykonaj:
+npm run deploy
+
+wtedy do repo zostanie wtegeszone wszystko co jest potrzebne i powinno dzialac
