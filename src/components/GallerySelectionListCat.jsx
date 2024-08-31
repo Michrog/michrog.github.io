@@ -14,7 +14,7 @@ export default function GallerySelectionListCat({ cat, selectedImage, imageNames
                         className="ImageSelectionListItem"
                         style={{
                             backgroundImage: `url(${require(`../assets/${image}.jpg`)})`,
-                            boxShadow: '0px 0px 3em purple',
+                            boxShadow: '0px 0px 3em',
                             zIndex:2
                         }}
                     >

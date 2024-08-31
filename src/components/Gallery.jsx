@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import mod from '../modulo.js'
+import boundary from "../boundary.js";
 import GalleryButtonCat from "./GalleryButtonCat.jsx";
+import GallerySelectionListCat from "./GallerySelectionListCat"
 import '../styles/Gallery.css'
 
 const images = require.context('../assets', true);
@@ -8,6 +10,7 @@ const imageNamesList = images.keys().map(image => (image.match('[a-z][0-9]+')[0]
 
 export default function Gallery({cat, onChangeCat}){
     const [imageName, setImageName] = useState(`${cat}1`)
+    const galleryScreenRef = useRef(null)
 
     function handleChangeCat(cat){
         onChangeCat(cat)
@@ -32,27 +35,82 @@ export default function Gallery({cat, onChangeCat}){
         }
     }
 
+    function handleDragImage(e){
+        const {
+            offsetTop: top, 
+            offsetLeft: left, 
+            style: s, 
+            offsetWidth: width, 
+            offsetHeight: height
+        } = galleryScreenRef.current
+        const horizontal = 100 * (e.clientX - left + window.scrollX) / width
+        const vertical = 100 * (e.clientY - top + window.scrollY) / height
+        s.backgroundPositionX = boundary(0, 100, horizontal) + "%"
+        s.backgroundPositionY = boundary(0, 100, vertical) + "%"
+    }
+
+    function handleTouchImage(e){
+        const {
+            offsetTop: top, 
+            offsetLeft: left, 
+            style: s, 
+            offsetWidth: width, 
+            offsetHeight: height
+        } = galleryScreenRef.current
+        galleryScreenRef.current.children[0].style.width = 0
+        galleryScreenRef.current.children[0].style.fontSize = 0
+        galleryScreenRef.current.children[1].style.width = 0
+        galleryScreenRef.current.children[1].style.fontSize = 0
+
+        const horizontal = 100 * (e.touches[0].clientX - left + window.scrollX) / width
+        const vertical = 100 * (e.touches[0].clientY - top + window.scrollY) / height
+        s.backgroundPositionX = boundary(0, 100, horizontal) + "%"
+        s.backgroundPositionY = boundary(0, 100, vertical) + "%"
+    }
+
+    function handleChangeImageSize(e){
+        const {style: s} = galleryScreenRef.current
+        s.backgroundSize = `${e.target.value}%`
+    }
+
     return (
-        <>
-        <select onChange={(e) => handleAbsoluteChangeImage(e.target.value)}>
-                {imageNamesList.map(image => (
-                   <option value={image}>{image}</option> 
-                ))}
-        </select>
-        <GalleryButtonCat cat='kluska' onHandleChangeCat={(e) => handleChangeCat(e)}/>
-        <GalleryButtonCat cat='oczko' onHandleChangeCat={(e) => handleChangeCat(e)}/>
-        <div
-        className='Gallery'
-        style={{backgroundImage: `url(${require(`../assets/${imageName}.jpg`)})`}}>
-            <div onClick={() => handleChangeImage(false)} className='ArrowButton'>
-                <b>{'<'}</b>
+        <div className="Gallery">
+            <div className="GalleryButtons">
+                <GalleryButtonCat cat='Kluska' onHandleChangeCat={(e) => handleChangeCat(e)}/>
+                <GalleryButtonCat cat='Mimi' onHandleChangeCat={(e) => handleChangeCat(e)}/>
             </div>
-            <div onClick={() => handleChangeImage(true)} className='ArrowButton' style={{right: '-0px'}}>
-                <b>{'>'}</b>
+            <input className="GallerySizeSlider" type="range" onChange={(e) => handleChangeImageSize(e)} />
+            <div
+                ref={galleryScreenRef}
+                className='GalleryScreen'
+                draggable
+                onDragStart={(e) => {
+                    const n = new Image()
+                    n.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+                    e.dataTransfer.setDragImage(n, 0, 0)
+                }}
+                onDrag={handleDragImage}
+                onDragEnd={handleDragImage}
+                onTouchMove={handleTouchImage}
+                onTouchEnd={() => {
+                    galleryScreenRef.current.children[0].style.width = '15%'
+                    galleryScreenRef.current.children[0].style.fontSize = '2em'
+                    galleryScreenRef.current.children[1].style.width = '15%'
+                    galleryScreenRef.current.children[1].style.fontSize = '2em'
+                }}
+                style={
+                    {
+                        backgroundImage: `url(${require(`../assets/${imageName}.jpg`)})`
+                    }
+                }>
+                <div onClick={() => handleChangeImage(false)} className='ArrowButton'>
+                    <b>{'<'}</b>
+                </div>
+                <div onClick={() => handleChangeImage(true)} className='ArrowButton' style={{right: '-0px'}}>
+                    <b>{'>'}</b>
+                </div>
             </div>
-            {/* <img src={images(`${imageName}`)} alt="test" width="70%"/> */}
-            {/* <img src={require(`../assets/${imageName}.jpg`)} alt="test" width="70%"/> */}
+            <GallerySelectionListCat cat={cat} selectedImage={imageName} imageNames={imageNamesList} onChangeImage={handleAbsoluteChangeImage}></GallerySelectionListCat>
         </div>
-        </>
     )
 }

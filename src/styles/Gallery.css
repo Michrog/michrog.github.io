@@ -1,18 +1,52 @@
+@media (hover: hover){
+    .ArrowButton {
+        opacity: 0%;
+    }
+}
+
 .ArrowButton {
-    background-color: rgb(255,255,255,0.4);
+    background-color: rgba(48, 48, 48, 0.596);
     font-size: 2em;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 1.5em;
+    width: 15%;
+    transition: 0.2s;
+}
+
+.ArrowButton:active {
+    background-color: rgba(49, 49, 49, 0.849)
+}
+
+.GalleryScreen {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.GalleryScreen:hover {
+    .ArrowButton {
+        opacity: 100%;
+    }
 }
 
 .Gallery {
-    width: 500px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    position: relative
+    width: 100%;
+    height: 60vh;
+}
+
+.GalleryButtons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2% 0
+}
+
+.GallerySizeSlider {
+    width: 100%
 }
