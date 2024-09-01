@@ -1,25 +1,18 @@
 import React, { useState, useRef } from "react";
-import mod from '../modulo.js'
-import boundary from "../boundary.js";
-import GalleryButtonCat from "./GalleryButtonCat.jsx";
+import mod from '../utils/modulo.js'
+import boundary from "../utils/boundary.js";
 import GallerySelectionListCat from "./GallerySelectionListCat"
 import '../styles/Gallery.css'
 
 const images = require.context('../assets', true);
 const imageNamesList = images.keys().map(image => (image.match('[a-z][0-9]+')[0]))
 
-export default function Gallery({cat, onChangeCat}){
-    const [imageName, setImageName] = useState(`${cat}1`)
+export default function Gallery({cat, imageName, onChangeImageName, onChangeCat}){
     const galleryScreenRef = useRef(null)
-
-    function handleChangeCat(cat){
-        onChangeCat(cat)
-        setImageName(`${cat}1`)
-    }
 
     function handleAbsoluteChangeImage(image){
         onChangeCat(image[0])
-        setImageName(`${image[0]}${image.match('[0-9]+')}`)
+        onChangeImageName(`${image[0]}${image.match('[0-9]+')}`)
     }
     
     function handleChangeImage(next){
@@ -28,10 +21,10 @@ export default function Gallery({cat, onChangeCat}){
 
         if(next){
             const nextImageName = imageNamesListCat[mod(imageNamesListCat.indexOf(cat + currentImageNameId) + 1, imageNamesListCat.length)]
-            setImageName(nextImageName)
+            onChangeImageName(nextImageName)
         } else {
             const previousImageName = imageNamesListCat[mod(imageNamesListCat.indexOf(cat + currentImageNameId) - 1, imageNamesListCat.length)]
-            setImageName(previousImageName)
+            onChangeImageName(previousImageName)
         }
     }
 
@@ -75,10 +68,6 @@ export default function Gallery({cat, onChangeCat}){
 
     return (
         <div className="Gallery">
-            <div className="GalleryButtons">
-                <GalleryButtonCat cat='Kluska' onHandleChangeCat={(e) => handleChangeCat(e)}/>
-                <GalleryButtonCat cat='Mimi' onHandleChangeCat={(e) => handleChangeCat(e)}/>
-            </div>
             <input className="GallerySizeSlider" type="range" onChange={(e) => handleChangeImageSize(e)} />
             <div
                 ref={galleryScreenRef}

@@ -21,7 +21,6 @@
 
 .GalleryScreen {
     width: 100%;
-    height: 100%;
     touch-action: none;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -39,6 +38,8 @@
 .Gallery {
     width: 100%;
     height: 60vh;
+    display: grid;
+    grid-template-rows: min-content 80% auto;
 }
 
 .GalleryButtons {

@@ -1,9 +1,7 @@
 .ImageSelectionList {
     width: 100%;
-    height: 20vh;
     display: grid;
-    grid-auto-flow: column;
-    margin: 1em 0;
+    grid-auto-flow: column
 }
 
 .ImageSelectionListItem {
