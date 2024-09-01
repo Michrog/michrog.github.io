@@ -1,0 +1,57 @@
+{
+    "k": {
+        "name": "Kluska",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros mauris, facilisis in velit nec, faucibus lacinia ante. Aenean dignissim ante ullamcorper sagittis mollis. Sed at hendrerit purus, id pulvinar tellus. In lorem urna, viverra non lorem quis, lobortis hendrerit justo. Fusce a malesuada ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In venenatis ipsum in nisi maximus bibendum. Sed at diam neque.",
+        "killcount": {
+            "mice": "many",
+            "birds": "some",
+            "grasshoppers": "a lot",
+            "mantises": "a lot",
+            "flies": "a lot",
+            "moths": "a lot"
+        },
+        "favouritePrey": "bugs",
+        "attributes": {
+            "power": "C",
+            "speed": "B",
+            "range": "B",
+            "durability": "D",
+            "precision": "B",
+            "potential": "A"
+        },
+        "character": [
+            "small",
+            "vaccinated",
+            "warrior",
+            "smart",
+            "sterilized",
+            "playful",
+            "needy"
+        ]
+    },
+    "m": {
+        "name": "Mimi",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros mauris, facilisis in velit nec, faucibus lacinia ante. Aenean dignissim ante ullamcorper sagittis mollis. Sed at hendrerit purus, id pulvinar tellus. In lorem urna, viverra non lorem quis, lobortis hendrerit justo. Fusce a malesuada ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In venenatis ipsum in nisi maximus bibendum. Sed at diam neque.",
+        "killcount": {
+            "mice": "many"
+        },
+        "favouritePrey": "unknown",
+        "attributes": {
+            "power": "A",
+            "speed": "C",
+            "range": "B",
+            "durability": "B",
+            "precision": "C",
+            "potential": "C"
+        },
+        "character": [
+            "short legs",
+            "fluffy fur",
+            "pirate",
+            "safe",
+            "sterilized",
+            "playful",
+            "friendly"
+        ]
+    }
+}

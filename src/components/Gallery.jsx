@@ -4,7 +4,7 @@ import boundary from "../utils/boundary.js";
 import GallerySelectionListCat from "./GallerySelectionListCat"
 import '../styles/Gallery.css'
 
-const images = require.context('../assets', true);
+const images = require.context('../assets', false, /..\.jpg/, 'sync');
 const imageNamesList = images.keys().map(image => (image.match('[a-z][0-9]+')[0]))
 
 export default function Gallery({cat, imageName, onChangeImageName, onChangeCat}){

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Gallery from './Gallery'
 import GalleryButtonCat from "./GalleryButtonCat.jsx";
+import cats from "../assets/cats.json"
 
 export default function CatSection(){
     const [cat, setCat] = useState('k')
@@ -13,6 +14,7 @@ export default function CatSection(){
                 <GalleryButtonCat cat='Kluska' onHandleChangeCat={setCat} onHandleChangeImage={setImageName}/>
                 <GalleryButtonCat cat='Mimi' onHandleChangeCat={setCat} onHandleChangeImage={setImageName}/>
             </div>
+            {cats[`${cat}`].name}
             <Gallery 
                 cat={cat} 
                 onChangeCat={setCat} 
