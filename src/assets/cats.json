@@ -5,21 +5,10 @@
         "killcount": {
             "mice": "many",
             "birds": "some",
-            "grasshoppers": "a lot",
-            "mantises": "a lot",
-            "flies": "a lot",
-            "moths": "a lot"
+            "bugs": "a lot"
         },
-        "favouritePrey": "bugs",
-        "attributes": {
-            "power": "C",
-            "speed": "B",
-            "range": "B",
-            "durability": "D",
-            "precision": "B",
-            "potential": "A"
-        },
-        "character": [
+        "attributes": [3,4,4,2,4,5],
+        "traits": [
             "small",
             "vaccinated",
             "warrior",
@@ -35,16 +24,8 @@
         "killcount": {
             "mice": "many"
         },
-        "favouritePrey": "unknown",
-        "attributes": {
-            "power": "A",
-            "speed": "C",
-            "range": "B",
-            "durability": "B",
-            "precision": "C",
-            "potential": "C"
-        },
-        "character": [
+        "attributes": [5,3,4,4,3,3],
+        "traits": [
             "short legs",
             "fluffy fur",
             "pirate",

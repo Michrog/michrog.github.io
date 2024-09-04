@@ -1,0 +1,62 @@
+.catDescriptionWrapper {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.catDescriptionVerbose {
+    max-height: 500px;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.catDescriptionChart {
+    width: 100%;
+    text-align: center;
+}
+
+.chartLine {
+    stroke: black;
+    stroke-width: 0.1px;
+    stroke-dasharray: 0.5px;
+}
+
+.chartPoly {
+    stroke: black;
+    stroke-width: 0.2px;
+    fill-opacity: 0;
+    stroke-opacity: 0.3;
+}
+
+.chartPolyCat {
+    stroke: silver;
+    stroke-width: 0.2px;
+    fill-opacity: 0.2;
+    fill: silver
+}
+
+.chartLine.power {
+    stroke: red;
+}
+.chartLine.speed {
+    stroke: gold;
+}
+.chartLine.range {
+    stroke: green;
+}
+.chartLine.durability {
+    stroke: blue;
+}
+.chartLine.precision {
+    stroke: cyan;
+}
+.chartLine.potential {
+    stroke: purple;
+}
+
+svg text {
+    text-anchor: middle;
+    dominant-baseline: middle
+}
