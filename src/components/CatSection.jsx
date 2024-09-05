@@ -2,17 +2,20 @@ import React, {useState} from "react";
 import Gallery from './Gallery'
 import GalleryButtonCat from "./GalleryButtonCat.jsx";
 import CatDescription from "./CatDescription.jsx"
+import cats from "../assets/cats.json"
+import '../styles/CatSection.css'
 
 export default function CatSection(){
-    const [cat, setCat] = useState('k')
+    const [cat, setCat] = useState('kluska')
     const [imageName, setImageName] = useState(`${cat}1`)
     
     return (
         <>
-            <div>This is the <font color='purple'>cat</font> section!</div>
-            <div className="GalleryButtons">
-                <GalleryButtonCat cat='Kluska' onHandleChangeCat={setCat} onHandleChangeImage={setImageName}/>
-                <GalleryButtonCat cat='Mimi' onHandleChangeCat={setCat} onHandleChangeImage={setImageName}/>
+            <h1 className="CatSectionHeading">Cat section</h1>
+            <div className="CatButtons">
+                {Object.keys(cats).map(k => (
+                    <GalleryButtonCat cat={k} onHandleChangeCat={setCat} onHandleChangeImage={setImageName}/>
+                ))}
             </div>
             <CatDescription cat={cat}/>
             <Gallery 

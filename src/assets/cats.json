@@ -1,38 +1,54 @@
 {
-    "k": {
+    "kluska": {
         "name": "Kluska",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros mauris, facilisis in velit nec, faucibus lacinia ante. Aenean dignissim ante ullamcorper sagittis mollis. Sed at hendrerit purus, id pulvinar tellus. In lorem urna, viverra non lorem quis, lobortis hendrerit justo. Fusce a malesuada ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In venenatis ipsum in nisi maximus bibendum. Sed at diam neque.",
-        "killcount": {
-            "mice": "many",
-            "birds": "some",
-            "bugs": "a lot"
-        },
+        "description": "Our cat. Adopted on May 2023 at a very young age. At first quite scared of us and would make lots of noise but over time she warmed up to us. At the time I used to work for Nokia from home so naturally she spent most of her time around me. When Kluska was less than 1 year old we didn't let her outside due to safety and we played a lot. Lots of cat items were purchased, such as a tower, a tunnel, some fishing poles and toys for biting / scratching. Ever since she was young she liked to be scrached on her belly and chew on my hand, she still does this but it doesn't hurt. Now that shes somewhat big we let her wander outside. The area around here isn't very traffic intensive and she learned to stay coutious of cars, rain and other hazards. As of late she likes to find a cozy place in some tall gras, a bush or a tree and just lay there. At night she becomes more active and hunts anything she can from bugs to birds. She mostly brings us bugs. Kluska also likes to mingle with other cats from the neighborhood, Mimi in particular. When she's home she usually snuggles into someones arms or someones bed.",
         "attributes": [3,4,4,2,4,5],
         "traits": [
             "small",
-            "vaccinated",
-            "warrior",
+            "tabby",
+            "hunter",
             "smart",
-            "sterilized",
             "playful",
-            "needy"
+            "sneaky"
         ]
     },
-    "m": {
+    "mimi": {
         "name": "Mimi",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros mauris, facilisis in velit nec, faucibus lacinia ante. Aenean dignissim ante ullamcorper sagittis mollis. Sed at hendrerit purus, id pulvinar tellus. In lorem urna, viverra non lorem quis, lobortis hendrerit justo. Fusce a malesuada ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In venenatis ipsum in nisi maximus bibendum. Sed at diam neque.",
-        "killcount": {
-            "mice": "many"
-        },
-        "attributes": [5,3,4,4,3,3],
+        "description": "Our neighbour's cat. She first showed up around the time we got Kluska. At first quite cautious but friendly. She seems to like the company of people more than anything else but does play with outher cats. She mosty stays at her owners place but when she hears me she shows up and wants to play. She is very easy to please and play with, a simple strand of tall grass will bring her great joy. Kluska and Mimi often end up chasing and 'hunting' each other until Mimi is fed up with it and hisses. She follows me around a lot, even to my room. I play with her a lot when she appears. One of her eyes is defective, the iris never changes size so shes likely somewhat blind on that one. She also can bite and scratch when petted but onlike Kluska, she accualy can hurt (her claws are bigger I guess).",
+        "attributes": [5,3,4,4,4,3],
         "traits": [
+            "big",
             "short legs",
-            "fluffy fur",
             "pirate",
             "safe",
-            "sterilized",
             "playful",
             "friendly"
+        ]
+    },
+    "kiki": {
+        "name": "Kiki",
+        "description": "My friend's adopted cat. One of a local's cat kittens taken home. Had some health problems in younger age but she's fine now. Kiki lives in an urban area so shes an indors cat, but my friend takes her on walks or sometimes even on trips. She likes to get her owners attention a lot and can be quite mischievous, jumping around and such. Kiki is around the same age as Kluska, a little bit older.",
+        "attributes": [3,4,5,3,3,4],
+        "traits": [
+            "small",
+            "black",
+            "explorer",
+            "glutton",
+            "needy",
+            "mischievous"
+        ]
+    },
+    "bialas": {
+        "name": "Białas",
+        "description": "A cat from our neighborhood. A rare sight as of late. This one has been around for at least 5 years. When this cat was younger it was more easy going, could even pet it. Now its more cautious, avoids people. This one seems to spend most of its time outside, going around the area and stealing food. I cought it running away from our kitchen multiple times, but we dont mind that much. It's aggresive towards other cats, even fought with Kluska but somehow lost in spite of the odds (lost as in to be driven away from our backyard). 'Białas' is just a nickname since we don't know its name.",
+        "attributes": [5,2,3,5,3,2],
+        "traits": [
+            "huge",
+            "white",
+            "thief",
+            "glutton",
+            "smart",
+            "independant"
         ]
     }
 }

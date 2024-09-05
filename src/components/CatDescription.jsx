@@ -29,7 +29,6 @@ export default function CatDescription({cat}){
         }
         return points.map((p) => p.join(',')).join(' ')
     }
-
     const basePoints = baseHexPoints(10, 100, 100)
     const catPoints = catHexPoints(10, 100, 100, currentCat.attributes)
 
@@ -39,14 +38,6 @@ export default function CatDescription({cat}){
                 <div>
                     <h2>{currentCat.name}</h2>
                     <p className="verboseDesc">{currentCat.description}</p>
-                    Hunts:
-                    <ul>
-                    {
-                        Object.entries(currentCat.killcount).map(e => (
-                            <li key={e[0]}>{`${e[0]}: ${e[1]}`}</li>
-                        ))
-                    }
-                    </ul>
                     Traits:
                     <ul>
                     {
