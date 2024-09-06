@@ -60,3 +60,28 @@ svg text {
     text-anchor: middle;
     dominant-baseline: middle
 }
+
+.traitsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em
+}
+
+.trait {
+    border-width: 1px;
+    background-image: linear-gradient(to right,
+     rgba(0, 0, 255, 0.2),
+     rgba(255, 0, 0, 0.2)
+     );
+    padding: 0.2em;
+    border-radius: 12%;
+    font-family: Consolas,monospace
+}
+
+.verboseDesc {
+    text-align: justify;
+    padding: 1%;
+    white-space: pre-line;
+    font-family: Consolas,monospace
+}

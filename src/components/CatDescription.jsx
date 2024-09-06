@@ -37,15 +37,21 @@ export default function CatDescription({cat}){
             <div className="catDescriptionVerbose">
                 <div>
                     <h2>{currentCat.name}</h2>
-                    <p className="verboseDesc">{currentCat.description}</p>
-                    Traits:
-                    <ul>
+                    <pre className="verboseDesc">{currentCat.description}</pre>
+                    <div className="traitsWrapper">
+                        {
+                            currentCat.traits.map(trait => (
+                                <span className="trait">{trait.toUpperCase()}</span>
+                            ))
+                        }
+                    </div>
+                    {/* <ul>
                     {
                         currentCat.traits.map(e => (
                             <li key={e}>{`${e}`}</li>
                         ))
                     }
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
             <div className="catDescriptionChart">
