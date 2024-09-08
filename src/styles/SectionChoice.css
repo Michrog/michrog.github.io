@@ -1,8 +1,74 @@
+:root {
+    --switchWidth: 20%
+}
+
+.SectionSwitch {
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    height: 2em;
+    width: var(--switchWidth);
+    margin-left: calc((100% - var(--switchWidth)) / 2);
+    padding: 5px;
+    border-radius: 1em;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+.SectionSwitchPellet {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: 0.2s;
+    position: relative;
+    border-radius: 0.8em;
+}
+
+@media (hover: hover){
+    .SectionSwitch:hover {
+        .SectionSwitchPellet{
+            box-shadow: 0px 0px 2em;
+        }
+    }
+}
+.SectionSwitch:active{
+    .SectionSwitchPellet{
+        box-shadow: 0px 0px 2em 0.3em;
+    }
+}
+
+.SectionSwitchPellet.serious {
+    left: 0%
+}
+.SectionSwitchPellet.comedy {
+    left: 30%
+}
+
+.SectionSwitchPelletText {
+    text-transform: capitalize;
+    user-select: none;
+    font-size: min(1.6vw, 1em);
+}
+
+/* :root {
+    --sectionButtonRadius : 1em
+}
+
 .SectionButton {
     width: 20%;
     height: 3em;
     border: none;
     transition: 0.16s;
+}
+
+.SectionButton:nth-child(1) {
+    border-radius: var(--sectionButtonRadius) 0 0 var(--sectionButtonRadius);
+}
+.SectionButton:nth-child(2) {
+    border-radius: 0 var(--sectionButtonRadius) var(--sectionButtonRadius) 0;
 }
 
 .SectionButton:hover{
@@ -15,6 +81,6 @@
 
 .SectionButtonWrapper {
     display: flex;
-    justify-content: space-evenly;
-    margin: 2% 0
-}
+    justify-content: center;
+    margin: 2% 0;
+} */

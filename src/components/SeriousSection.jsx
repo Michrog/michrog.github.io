@@ -11,7 +11,6 @@ export default function SeriousSection(){
                 <li>GitHub: <a target="__blank" href="https://github.com/Michrog">https://github.com/Michrog</a></li>
                 <li>Linkedin: <a target="__blank" href="https://www.linkedin.com/in/micha%C5%82-rogali%C5%84ski-0a0374218/">https://www.linkedin.com/in/michał-rogaliński</a></li>
             </ul>
-
         </>
     )
 }

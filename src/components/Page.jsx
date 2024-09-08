@@ -7,7 +7,7 @@ export default function Page(){
     const [section, setSection] = useState('serious')
     return (
         <div className="Page">
-            <SectionChoice onChangeSection={setSection}></SectionChoice>
+            <SectionChoice section={section} onChangeSection={setSection}></SectionChoice>
             <hr />
             <PageSection section={section}></PageSection>
         </div>

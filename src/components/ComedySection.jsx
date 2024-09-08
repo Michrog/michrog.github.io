@@ -18,7 +18,6 @@ export default function ComedySection(){
     }
     return (
         <>
-            <h1 className="Heading">Comedy section</h1>
             <div className="ComedySectionButtons">
                 <ComedySectionButton section='Cat' handleChangeSection={setComedySection}/>
                 <ComedySectionButton section='Gaming' handleChangeSection={setComedySection}/>
