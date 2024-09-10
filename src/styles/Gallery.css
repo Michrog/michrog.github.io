@@ -40,6 +40,7 @@
     height: 70vh;
     display: grid;
     grid-template-rows: min-content 80% auto;
+    margin-bottom: 2%;
 }
 
 .GallerySizeSlider {

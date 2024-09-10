@@ -2,7 +2,10 @@ import React from "react";
 import cats from "../assets/cats.json"
 import '../styles/GalleryButtonCat.css'
 
-export default function GalleryButtonCat({ cat, onHandleChangeCat, onHandleChangeImage }){
+export default function GalleryButtonCat({ currentCat='', cat, onHandleChangeCat, onHandleChangeImage }){
+    const activeStyle = {
+        fontWeight: currentCat === cat ? 'bold' : 'normal'
+    }
 
     function handleChangeCat(cat){
         onHandleChangeCat(cat)
@@ -10,6 +13,12 @@ export default function GalleryButtonCat({ cat, onHandleChangeCat, onHandleChang
     }
 
     return (
-        <button className="GalleryButtonCat" onClick={() => handleChangeCat(cat.toLowerCase())}>{cats[cat].name}</button>
+        <button 
+            className="GalleryButtonCat" 
+            onClick={() => handleChangeCat(cat.toLowerCase())}
+            style={activeStyle}
+        >
+        {cats[cat].name}
+        </button>
     )
 }

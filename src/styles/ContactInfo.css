@@ -1,0 +1,53 @@
+@import url('../fontawesome/css/brands.min.css');
+@import url('../fontawesome/css/solid.min.css');
+
+.ContactList > li::before {
+    padding-right: 5px;
+}
+
+.ContactList > li:nth-child(1)::before {
+    font-family: "Font Awesome 6 Free";
+    content: '\f0e0';
+    font-weight: 400
+}
+.ContactList > li:nth-child(2)::before {
+    font-family: "Font Awesome 6 Free";
+    content: '\f095';
+    font-weight: 400
+}
+.ContactList > li:nth-child(3)::before {
+    font-family: "Font Awesome 6 Brands";
+    content: '\f09b';
+    font-weight: 400
+}
+.ContactList > li:nth-child(4)::before {
+    font-family: "Font Awesome 6 Brands";
+    content: '\f08c';
+    font-weight: 400
+}
+
+.ContactList > li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.ContactList {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.ContactInfo {
+    font-size: 1.6vw;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em 0
+}
+
+.ContactInfoPicture {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 1em;
+}

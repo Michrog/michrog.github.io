@@ -10,8 +10,10 @@ export default function SectionChoice({section='serious', onChangeSection}){
             className="SectionSwitch"
             onClick={() => onChangeSection(nextSection)}
         >
-            <div className={pelletClassName}>
-                <div className="SectionSwitchPelletText">{section} section</div>
+            <div className="SectionSwitchFill">
+                <div className={pelletClassName}>
+                    <div className="SectionSwitchPelletText">{section} section</div>
+                </div>
             </div>
         </div>
     )

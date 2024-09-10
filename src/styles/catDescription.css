@@ -12,6 +12,9 @@
     overflow-y: auto;
     overflow-x: auto;
 }
+.catDescriptionVerbose h2 {
+    text-align: center;
+}
 
 .catDescriptionChart {
     width: 100%;
@@ -70,13 +73,12 @@ svg text {
 }
 
 .trait {
-    border-width: 1px;
     background-image: linear-gradient(to right,
      rgba(0, 0, 255, 0.2),
      rgba(255, 0, 0, 0.2)
      );
-    padding: 0.2em;
-    border-radius: 12%;
+    padding: 0.4em;
+    border-radius: 1em;
     font-family: Consolas,monospace
 }
 

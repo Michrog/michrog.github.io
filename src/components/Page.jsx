@@ -5,6 +5,7 @@ import '../styles/Page.css'
 
 export default function Page(){
     const [section, setSection] = useState('serious')
+
     return (
         <div className="Page">
             <SectionChoice section={section} onChangeSection={setSection}></SectionChoice>

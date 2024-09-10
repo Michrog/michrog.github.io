@@ -13,7 +13,7 @@ export default function GallerySelectionListCat({ cat, selectedImage, imageNames
                         onClick={() => onChangeImage(image)}
                         className="ImageSelectionListItem"
                         style={{
-                            backgroundImage: `url(${require(`../assets/${image}.jpg`)})`,
+                            backgroundImage: `url(${require(`../assets/cats/${image}.jpg`)})`,
                             boxShadow: '0px 0px 3em',
                             zIndex:2
                         }}
@@ -23,7 +23,7 @@ export default function GallerySelectionListCat({ cat, selectedImage, imageNames
                         key={image}
                         onClick={() => onChangeImage(image)}
                         className="ImageSelectionListItem"
-                        style={{backgroundImage: `url(${require(`../assets/${image}.jpg`)})`}}
+                        style={{backgroundImage: `url(${require(`../assets/cats/${image}.jpg`)})`}}
                     >
                     </div> 
                 )

@@ -1,9 +1,20 @@
+:root {
+    --catsAmount: 4;
+    --catSwitchWidth: 60%
+}
+
 .CatSectionHeading {
     text-align: left;
     margin: 2% 0%
 }
 
 .CatButtons {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    width: var(--catSwitchWidth);
+    margin-left: calc((100% - var(--catSwitchWidth)) / 2);
+    grid-template-columns: repeat(var(--catsAmount), 1fr);
+    border-radius: 1em;
+    padding: 5px;
+    background-color: grey;
+    margin-top: 2%
 }

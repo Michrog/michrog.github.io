@@ -19,8 +19,16 @@ export default function ComedySection(){
     return (
         <>
             <div className="ComedySectionButtons">
-                <ComedySectionButton section='Cat' handleChangeSection={setComedySection}/>
-                <ComedySectionButton section='Gaming' handleChangeSection={setComedySection}/>
+                <ComedySectionButton 
+                    currentComedySection={comedySection} 
+                    section='Cat' 
+                    handleChangeSection={setComedySection}
+                />
+                <ComedySectionButton 
+                    currentComedySection={comedySection} 
+                    section='Gaming' 
+                    handleChangeSection={setComedySection}
+                />
             </div>
             {section}
         </>

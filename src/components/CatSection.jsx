@@ -11,10 +11,9 @@ export default function CatSection(){
     
     return (
         <>
-            <h1 className="CatSectionHeading">Cat section</h1>
             <div className="CatButtons">
                 {Object.keys(cats).map(k => (
-                    <GalleryButtonCat cat={k} onHandleChangeCat={setCat} onHandleChangeImage={setImageName}/>
+                    <GalleryButtonCat currentCat={cat} cat={k} onHandleChangeCat={setCat} onHandleChangeImage={setImageName}/>
                 ))}
             </div>
             <CatDescription cat={cat}/>
