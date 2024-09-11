@@ -1,0 +1,15 @@
+:root {
+    --seriousSectionSwitchWidth: 40%;
+    --seriousSectionSwitchAmount: 3
+}
+
+.SeriousSectionButtons {
+    display: grid;
+    width: var(--seriousSectionSwitchWidth);
+    margin-left: calc((100% - var(--seriousSectionSwitchWidth)) / 2);
+    grid-template-columns: repeat(var(--seriousSectionSwitchAmount), 1fr);
+    border-radius: 1em;
+    padding: 5px;
+    background-color: grey;
+    margin-top: 2%
+}

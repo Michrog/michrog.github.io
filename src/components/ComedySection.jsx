@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import CatSection from './CatSection'
-import ComedySectionButton from "./ComedySectionButton";
+import StateButton from './StateButton'
 import '../styles/ComedySection.css'
 
 export default function ComedySection(){
@@ -19,15 +19,17 @@ export default function ComedySection(){
     return (
         <>
             <div className="ComedySectionButtons">
-                <ComedySectionButton 
-                    currentComedySection={comedySection} 
-                    section='Cat' 
-                    handleChangeSection={setComedySection}
+                <StateButton 
+                    currentState={comedySection} 
+                    state='Cat' 
+                    onChangeState={setComedySection}
+                    text='section'
                 />
-                <ComedySectionButton 
-                    currentComedySection={comedySection} 
-                    section='Gaming' 
-                    handleChangeSection={setComedySection}
+                <StateButton 
+                    currentState={comedySection} 
+                    state='Gaming' 
+                    onChangeState={setComedySection}
+                    text='section'
                 />
             </div>
             {section}
