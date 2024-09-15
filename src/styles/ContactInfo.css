@@ -44,6 +44,13 @@
     grid-template-columns: 1fr 1fr;
     margin: 1em 0
 }
+@media screen and (max-width: 700px) {
+    .ContactInfo {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        font-size: 3vw;
+    }
+}
 
 .ContactInfoPicture {
     width: 50%;
