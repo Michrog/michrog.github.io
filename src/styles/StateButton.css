@@ -3,7 +3,7 @@
     height: 3em;
     border: none;
     transition: 0.16s;
-    font-size: min(1.6vw, 1em);
+    font-size: 1em;
     user-select: none;
 }
 .StateButton:first-child{
@@ -15,6 +15,9 @@
     border-bottom-right-radius: 0.8em;
 }
 @media screen and (max-width: 800px){
+    .StateButton{
+        font-size: 1.6vw;
+    }
     .StateButton:first-child{
         border-top-left-radius: 1.2em;
         border-bottom-left-radius: 1.2em;

@@ -3,10 +3,17 @@
     --seriousSectionSwitchAmount: 3
 }
 
+.SeriousSectionButtonsContainer {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .SeriousSectionButtons {
     display: grid;
     width: var(--seriousSectionSwitchWidth);
-    margin-left: calc((100% - var(--seriousSectionSwitchWidth)) / 2);
+    /* margin-left: calc((100% - var(--seriousSectionSwitchWidth)) / 2); */
     grid-template-columns: repeat(var(--seriousSectionSwitchAmount), 1fr);
     border-radius: 1em;
     padding: 5px;

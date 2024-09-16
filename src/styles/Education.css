@@ -36,13 +36,12 @@
 
 .EducationInfo {
     display: grid;
+    gap: 2vw;
     margin: 1em;
     font-size: 1.2em;
 }
 .EducationInfoItem {
     background-color: white;
-    margin: 1em;
-    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,15 +55,15 @@
 
 @media screen and (max-width: 800px) {
     .EducationHeadingText {
-        font-size: 0.8em
+        font-size: 3.5vw
     }
     .EducationHeadingText div:first-child {
-        font-size: 1.2em;
+        font-size: 4vw;
     }
     .EducationInfo {
-        font-size: 0.8em
+        font-size: 2vw
     }
     .EducationHeadingImage{
-        width: 300px
+        width: 50%
     }
 }

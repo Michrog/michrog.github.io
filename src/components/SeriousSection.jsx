@@ -43,22 +43,24 @@ export default function SeriousSection(){
 
     return (
         <div>
-            <div className="SeriousSectionButtons">
-                <StateButton 
-                    currentState={seriousSection} 
-                    state='contact' 
-                    onChangeState={setSeriousSection}
-                />
-                <StateButton 
-                    currentState={seriousSection} 
-                    state='education' 
-                    onChangeState={setSeriousSection}
-                />
-                <StateButton 
-                    currentState={seriousSection} 
-                    state='experience' 
-                    onChangeState={setSeriousSection}
-                />
+            <div className="SeriousSectionButtonsContainer">
+                <div className="SeriousSectionButtons">
+                    <StateButton 
+                        currentState={seriousSection} 
+                        state='contact' 
+                        onChangeState={setSeriousSection}
+                    />
+                    <StateButton 
+                        currentState={seriousSection} 
+                        state='education' 
+                        onChangeState={setSeriousSection}
+                    />
+                    <StateButton 
+                        currentState={seriousSection} 
+                        state='experience' 
+                        onChangeState={setSeriousSection}
+                    />
+                </div>
             </div>
             {section(seriousSection)}
             <hr />
