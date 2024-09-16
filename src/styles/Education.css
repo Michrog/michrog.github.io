@@ -1,0 +1,70 @@
+.Education {
+    margin: 2% 0;
+}
+
+.EducationHeading {
+    display: grid;
+    gap: 1em;
+    width: 100%;
+}
+.EducationHeadingText {    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    p {
+        font-weight: bold;
+        font-size: 1.2em
+    }
+    pre{
+        font-weight: bold;
+        font-size: 1.2em;
+        font-family: Verdana;
+        white-space: pre-wrap;
+    }
+}
+.EducationHeadingText div:first-child {
+    font-size: 1.4em;
+}
+.EducationHeadingImage {
+    margin-left: 10%
+}
+.EducationHeadingImageContainer{
+    border-radius: 1em;
+}
+
+.EducationInfo {
+    display: grid;
+    margin: 1em;
+    font-size: 1.2em;
+}
+.EducationInfoItem {
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1em;
+    pre {
+        font-family: Verdana;
+        white-space: pre-wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .EducationHeadingText {
+        font-size: 0.8em
+    }
+    .EducationHeadingText div:first-child {
+        font-size: 1.2em;
+    }
+    .EducationInfo {
+        font-size: 0.8em
+    }
+    .EducationHeadingImage{
+        width: 300px
+    }
+}

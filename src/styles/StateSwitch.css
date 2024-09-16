@@ -2,11 +2,23 @@
     display: flex;
     align-items: center;
     background-color: grey;
-    height: 2em;
     padding: 5px;
     border-radius: 1em;
     margin-top: 2%;
-    margin-bottom: 2%
+    margin-bottom: 2%;
+    height: min-content
+}
+@media (hover: hover){
+    .StateSwitch:hover {
+        .StateSwitchPellet{
+            box-shadow: 0px 0px 2em;
+        }
+    }
+}
+.StateSwitch:active{
+    .StateSwitchPellet{
+        box-shadow: 0px 0px 2vw 0.3em;
+    }
 }
 
 .StateSwitchPellet {
@@ -19,30 +31,8 @@
     transition: 0.2s;
     position: relative;
     border-radius: 0.8em;
+    overflow: hidden;
 }
-
-.StateSwitchFill {
-    display: flex;
-    align-items: center;
-    width:100%;
-    height: 100%;
-    background-color: rgb(65, 65, 65);
-    border-radius: 0.8em;
-}
-
-@media (hover: hover){
-    .SectionSwitch:hover {
-        .SectionSwitchPellet{
-            box-shadow: 0px 0px 2em;
-        }
-    }
-}
-.StateSwitch:active{
-    .StateSwitchPellet{
-        box-shadow: 0px 0px 2em 0.3em;
-    }
-}
-
 .StateSwitchPellet.right {
     left: 0%
 }
@@ -50,10 +40,28 @@
     left: 30%
 }
 
+.StateSwitchFill {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(65, 65, 65);
+    border-radius: 0.8em;
+    container-name: Fill;
+}
+
 .StateSwitchPelletText {
     text-transform: capitalize;
     user-select: none;
-    font-size: min(1.6vw, 1em);
     background-color: white;
-    color: black
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    margin: 4%
+}
+
+@media screen and (max-width: 800px){
+    .StateSwitchPelletText{
+        font-size: 2vw;
+    }
 }

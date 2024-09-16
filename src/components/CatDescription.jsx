@@ -1,5 +1,5 @@
 import React from "react";
-import cats from "../assets/cats.json"
+import cats from "../assets/cats/cats.json"
 import '../styles/catDescription.css'
 
 export default function CatDescription({cat}){
@@ -45,13 +45,6 @@ export default function CatDescription({cat}){
                             ))
                         }
                     </div>
-                    {/* <ul>
-                    {
-                        currentCat.traits.map(e => (
-                            <li key={e}>{`${e}`}</li>
-                        ))
-                    }
-                    </ul> */}
                 </div>
             </div>
             <div className="catDescriptionChart">

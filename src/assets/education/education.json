@@ -1,0 +1,27 @@
+{
+    "pwr": {
+        "name": "Wroclaw University of Technology",
+        "title": "Bachelor's degree in ICT",
+        "duration": 3.5,
+        "duration_range": "10.2019 - 02.2023",
+        "info": [
+            "Faculty of Information and Communication Technology", 
+            "Teleinformatics field", 
+            "ICT Network Design specialization",
+            "Mobile application projects",
+            "5G network throughput calculation thesis subject",
+            "Basic artificial intelligence course and project"
+        ]
+    },
+    "zsge": {
+        "name": "“Zespoł Szkoł Gorniczo Energetycznych w Koninie”\nTechnical School",
+        "title": "IT technician - secondary education",
+        "duration": 4,
+        "duration_range": "09.2015 - 06.2019",
+        "info": [
+            "E.12\nAssembly and exploitation of workstations and peripheral devices",
+            "E.13\nDesigning and management of local computer networks", 
+            "E.14\nDesigning and management of web applications and databases"
+        ]
+    }
+}

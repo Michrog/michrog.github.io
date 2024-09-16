@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import '../styles/StateSwitch.css'
 
 export default function StateSwitch({state, states=['', ''], onChangeState, text='', width='20%'}){
@@ -11,14 +11,18 @@ export default function StateSwitch({state, states=['', ''], onChangeState, text
             className="StateSwitch"
             onClick={() => onChangeState(nextState)}
             style={{
-                width: width
+                width: `max(2em, ${width})`
             }}
         >
             <div className="StateSwitchFill">
                 <div className={pelletClassName}>
-                    <div className="StateSwitchPelletText">
-                        {typeof(state) === 'string' ? `${state} ${text}` : text}
-                    </div>
+                    <p className="StateSwitchPelletText">
+                        {
+                            typeof(state) === 'string' ? 
+                            `${state} ${text}` :
+                            text
+                        }
+                    </p>
                 </div>
             </div>
         </div>

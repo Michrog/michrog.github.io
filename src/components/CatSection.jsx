@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Gallery from './Gallery'
 import StateButton from './StateButton'
 import CatDescription from "./CatDescription.jsx"
-import cats from "../assets/cats.json"
+import cats from "../assets/cats/cats.json"
 import '../styles/CatSection.css'
 
 export default function CatSection(){

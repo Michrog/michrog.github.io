@@ -9,6 +9,7 @@ body {
 .PageHead {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .PageHead > .StateSwitch:last-child{

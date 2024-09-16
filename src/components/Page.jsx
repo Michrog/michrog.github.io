@@ -12,12 +12,13 @@ export default function Page(){
 
     return (
         <div className="Page">
+            <hr />
             <div className="PageHead">
                 <StateSwitch 
                     state={section} 
                     states={['serious', 'comedy']}
                     onChangeState={setSection}
-                    text='Section'
+                    text="Section"
                     width='20%'>
                 </StateSwitch>
                 <StateSwitch 
