@@ -3,7 +3,7 @@ import '../styles/SeriousSection.css'
 import StateButton from './StateButton'
 import ContactInfo from "./ContactInfo";
 import Education from "./Education";
-import WorkExperience from "./WorkExperience";
+import Experience from "./Experience";
 // import getAverageRGB from "../utils/getAverageRGB";
 // import schools from '../assets/education/education.json'
 
@@ -29,13 +29,22 @@ export default function SeriousSection(){
                 return (
                     <>
                         {/* <Education school="pwr" imgColor={imgColors['pwr']}/> */}
-                        <Education school="pwr" imgColor='rgb(137, 66, 53, 0.2)'/>
                         {/* <Education school="zsge" imgColor={imgColors['zsge']}/> */}
+                        <Education school="pwr" imgColor='rgb(137, 66, 53, 0.2)'/>
                         <Education school="zsge" imgColor='rgb(34, 67, 46, 0.2)'/>
                     </>
                 )
             case 'experience':
-                return <WorkExperience/>
+                return (
+                    <>
+                        <Experience place="nokia" imgColor="rgb(46, 178, 161, 0.2)"/>
+                    </>
+                )
+            case 'projects':
+                return (
+                    <>
+                    </>
+                )
             default: 
                 return <ContactInfo/>
         }
@@ -58,6 +67,11 @@ export default function SeriousSection(){
                     <StateButton 
                         currentState={seriousSection} 
                         state='experience' 
+                        onChangeState={setSeriousSection}
+                    />
+                    <StateButton 
+                        currentState={seriousSection} 
+                        state='projects' 
                         onChangeState={setSeriousSection}
                     />
                 </div>

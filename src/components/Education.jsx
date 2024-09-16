@@ -9,9 +9,7 @@ export default function Education({school='pwr', imgColor='rgb(255,255,255)'}){
     const freeSpaces = ((gridRes * gridRows) - currentSchool.info.length)
 
     return (
-        <div 
-            className="Education"
-        >
+        <div className="Education">
             <div className="EducationHeading">
                 <div 
                     style={{

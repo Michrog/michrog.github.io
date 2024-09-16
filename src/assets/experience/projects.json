@@ -1,0 +1,13 @@
+{
+    "5gth": {
+        "name": "5G network throughput calculator",
+        "description": "My engineering thesis project.\n\nMy major is in ICT and at the time I was working at Nokia so I decided I would make something cellular network centric. A simple calculator was good enough.\n\nI also wanted to polish my python so I decided to use that. I used Numpy for its arrays and data manipulation and PyQT for the GUI since I heard its better looking than Tkinter. I could've used the dedicated GUI creator but I wanted to practice writing code so I wrote everything instead.\n\nIn order for this calculator to work I had to follow instructions found in certain 3GPP specifications. There's a bunch of them and I used them as source for various chapters in my thesis. One of them has the formula for the throughput, 3GPP TS 38.306 \"NR; user equipment (ue) radio access capabilities\". All sources are listed in my thesis.\n\nThe GUI has inputs for all required variables. All availible values are either hard coded (since there arent that many of them, for example FR1 or FR2) or are read from a CSV file (like the Nrb sizes). I haven't updated the program since so some data may be outdated such as the Nrb sizes but all of them are defined in the specifications so if I felt like it I could always change them with ease.\n\nIf you are interested in this project I invite you to check it out on my GitHub.",
+        "github": "https://github.com/Michrog/5G_thr",
+        "technologies": [
+            "Python",
+            "PyQT6",
+            "Numpy",
+            "3GPP specifications"
+        ]
+    }
+}
