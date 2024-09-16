@@ -1,18 +1,20 @@
-.Work {
+.Project {
     margin: 2% 0;
 }
 
-.WorkHeading {
+.ProjectHeading {
     display: grid;
     gap: 1em;
     width: 100%;
 }
-.WorkHeadingText {    
+.ProjectHeadingText {    
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
     p {
         font-weight: bold;
         font-size: 1.2em
@@ -24,31 +26,29 @@
         white-space: pre-wrap;
     }
 }
-.WorkHeadingText div:first-child {
+.ProjectHeadingText div:first-child {
     font-size: 1.4em;
 }
-.WorkHeadingImage {
-    margin-left: 10%;
-    width: 30%;
-    border-bottom-right-radius: 3em;
+.ProjectHeadingImage {
+    width: 75%;
 }
-.WorkHeadingImageContainer{
-    border-top-left-radius: 3em;
+.ProjectHeadingImageContainer{
+    justify-content: center;
 }
 
-.WorkInfo {
+.ProjectTechnologies {
     display: grid;
     gap: 2vw;
     margin: 1em;
     font-size: 1.2em;
 }
-.WorkInfoItem {
+.ProjectTechnologiesItem {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 0.3em;
+    border-radius: 0.2em;
     pre {
         font-family: Verdana;
         white-space: pre-wrap;
@@ -56,19 +56,25 @@
 }
 
 @media screen and (max-width: 800px) {
-    .WorkHeadingText {
-        font-size: 2.5vw
+    .ProjectHeadingText {
+        font-size: 2.5vw;
+        border-top-left-radius: 1.5em;
+        border-bottom-right-radius: 1.5em;
     }
-    .WorkHeadingText div:first-child {
+    .ProjectHeadingText div:first-child {
         font-size: 3vw;
     }
-    .WorkInfo {
+    .ProjectTechnologies {
         font-size: 2vw
     }
-    .WorkHeadingImageContainer{
-        border-top-left-radius: 1.5em;
+    .ProjectDescriptionContainer {
+        font-size: 2vw;
     }
-    .WorkHeadingImage{
-        border-bottom-right-radius: 1.5em;
+}
+
+.ProjectDescriptionContainer {
+    pre {
+        font-family: Verdana;
+        white-space: pre-wrap;
     }
 }

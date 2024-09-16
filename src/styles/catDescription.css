@@ -5,12 +5,29 @@
     justify-content: space-between;
     margin: 2% 0
 }
+@media screen and (max-width: 800px) {
+    .catDescriptionWrapper{
+        grid-template-columns: auto;
+    }   
+}
 
 .catDescriptionVerbose {
     max-height: 500px;
     overflow: scroll;
     overflow-y: auto;
     overflow-x: auto;
+    pre {
+        font-family: Verdana;
+        white-space: pre-wrap;
+    }
+}
+@media screen and (max-width: 800px) {
+    .catDescriptionVerbose{
+        max-height: none ;
+        overflow: auto;
+        margin: 0 5%
+    }
+    
 }
 .catDescriptionVerbose h2 {
     text-align: center;
@@ -79,7 +96,8 @@ svg text {
      );
     padding: 0.4em;
     border-radius: 1em;
-    font-family: Consolas,monospace
+    font-family: Consolas,monospace;
+    user-select: none;
 }
 
 .verboseDesc {

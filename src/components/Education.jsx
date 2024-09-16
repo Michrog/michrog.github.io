@@ -20,7 +20,7 @@ export default function Education({school='pwr', imgColor='rgb(255,255,255)'}){
                 >
                     <img 
                         src={require(`../assets/education/${school}-logo.png`)}
-                        alt="pwr"
+                        alt={school}
                         className="EducationHeadingImage"
                     />
                 </div>

@@ -28,8 +28,8 @@ export default function ComedySection(){
                 <StateButton 
                     currentState={comedySection} 
                     state='Gaming' 
-                    onChangeState={setComedySection}
-                    text='section'
+                    onChangeState={() => (true)}
+                    text='section (not ready)'
                 />
             </div>
             {section}

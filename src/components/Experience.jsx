@@ -20,7 +20,7 @@ export default function Experience({place='nokia', imgColor='rgb(255,255,255)'})
                 >
                     <img 
                         src={require(`../assets/experience/work-${place}-logo.png`)}
-                        alt="nokia"
+                        alt={place}
                         className="WorkHeadingImage"
                     />
                 </div>

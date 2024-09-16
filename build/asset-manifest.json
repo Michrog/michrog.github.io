@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b54fc519.css",
-    "main.js": "/static/js/main.a2af73f5.js",
+    "main.css": "/static/css/main.9b9b5da5.css",
+    "main.js": "/static/js/main.dec0a9fd.js",
     "static/js/453.ad6eb26e.chunk.js": "/static/js/453.ad6eb26e.chunk.js",
     "static/media/mimi2.jpg": "/static/media/mimi2.88c0e038f461556bede8.jpg",
     "static/media/mimi3.jpg": "/static/media/mimi3.0b8d35967d0db16be1c8.jpg",
@@ -21,6 +21,7 @@
     "static/media/kiki3.jpg": "/static/media/kiki3.57cad5620fa57495545b.jpg",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/kiki5.jpg": "/static/media/kiki5.082c89e6fa132947416a.jpg",
+    "static/media/work-nokia-logo.png": "/static/media/work-nokia-logo.4edd8ef7e8be84df171e.png",
     "static/media/kiki1.jpg": "/static/media/kiki1.b50eb3c505518528ca57.jpg",
     "static/media/kiki4.jpg": "/static/media/kiki4.c9ee139933f0cd570bf2.jpg",
     "static/media/me.jpg": "/static/media/me.4236208f6b3a587196cf.jpg",
@@ -29,12 +30,12 @@
     "static/media/pwr-logo.png": "/static/media/pwr-logo.858aea4b2ed2e122e333.png",
     "static/media/zsge-logo.png": "/static/media/zsge-logo.3db0eb399c44e4f1c3c2.png",
     "index.html": "/index.html",
-    "main.b54fc519.css.map": "/static/css/main.b54fc519.css.map",
-    "main.a2af73f5.js.map": "/static/js/main.a2af73f5.js.map",
+    "main.9b9b5da5.css.map": "/static/css/main.9b9b5da5.css.map",
+    "main.dec0a9fd.js.map": "/static/js/main.dec0a9fd.js.map",
     "453.ad6eb26e.chunk.js.map": "/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b54fc519.css",
-    "static/js/main.a2af73f5.js"
+    "static/css/main.9b9b5da5.css",
+    "static/js/main.dec0a9fd.js"
   ]
 }

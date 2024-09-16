@@ -48,7 +48,20 @@
             "thief",
             "glutton",
             "smart",
-            "independant"
+            "independent"
+        ]
+    },
+    "sfinks": {
+        "name": "Sfinks",
+        "description": "A cat from our neighborhood.\n\nSeems to like people and other cats but is too scared to interact. Will come to sniff a hand when given a treat or a toy.",
+        "attributes": [3,4,3,1,5,5],
+        "traits": [
+            "small",
+            "big ears",
+            "secretive",
+            "cautious",
+            "friendly",
+            "skittish"
         ]
     }
 }

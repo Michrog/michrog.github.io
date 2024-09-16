@@ -4,6 +4,7 @@ import StateButton from './StateButton'
 import ContactInfo from "./ContactInfo";
 import Education from "./Education";
 import Experience from "./Experience";
+import Project from "./Project";
 // import getAverageRGB from "../utils/getAverageRGB";
 // import schools from '../assets/education/education.json'
 
@@ -37,12 +38,13 @@ export default function SeriousSection(){
             case 'experience':
                 return (
                     <>
-                        <Experience place="nokia" imgColor="rgb(46, 178, 161, 0.2)"/>
+                        <Experience place="nokia" imgColor="rgb(171, 200, 250, 0.4)"/>
                     </>
                 )
             case 'projects':
                 return (
                     <>
+                        <Project project='5gth' imgColor="rgb(135, 151, 139, 0.2)"/>
                     </>
                 )
             default: 

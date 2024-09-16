@@ -28,10 +28,11 @@
     font-size: 1.4em;
 }
 .EducationHeadingImage {
-    margin-left: 10%
+    margin-left: 10%;
+    border-bottom-right-radius: 3em;
 }
 .EducationHeadingImageContainer{
-    border-radius: 1em;
+    border-top-left-radius: 3em;
 }
 
 .EducationInfo {
@@ -46,7 +47,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 1em;
+    border-radius: 0.3em;
     pre {
         font-family: Verdana;
         white-space: pre-wrap;
@@ -64,6 +65,10 @@
         font-size: 2vw
     }
     .EducationHeadingImage{
-        width: 50%
+        width: 50%;
+        border-bottom-right-radius: 1.5em;
+    }
+    .EducationHeadingImageContainer{
+        border-top-left-radius: 1.5em;
     }
 }
