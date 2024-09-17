@@ -6,6 +6,7 @@
     display: grid;
     gap: 1em;
     width: 100%;
+    grid-template-rows: 1fr 1fr;
 }
 .EducationHeadingText {    
     display: flex;
@@ -32,7 +33,20 @@
     border-bottom-right-radius: 3em;
 }
 .EducationHeadingImageContainer{
-    border-top-left-radius: 3em;
+    border-radius: 0.3em;
+    .AsyncImage-root{
+        border-radius: 0.3em;
+    }
+    img {
+        border-top-left-radius: 3em;
+        border-bottom-right-radius: 3em;
+        max-width: fit-content;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0
+    }
 }
 
 .EducationInfo {
@@ -64,11 +78,10 @@
     .EducationInfo {
         font-size: 2vw
     }
-    .EducationHeadingImage{
-        width: 50%;
-        border-bottom-right-radius: 1.5em;
-    }
     .EducationHeadingImageContainer{
-        border-top-left-radius: 1.5em;
+        img {
+            border-top-left-radius: 1.5em;
+            border-bottom-right-radius: 1.5em;
+        }
     }
 }

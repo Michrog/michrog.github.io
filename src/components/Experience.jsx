@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/Experience.css'
 import work from '../assets/experience/work.json'
+import { AsyncImage } from "loadable-image";
 
 export default function Experience({place='nokia', imgColor='rgb(255,255,255)'}){
     const currentWork = work[place]
@@ -18,10 +19,11 @@ export default function Experience({place='nokia', imgColor='rgb(255,255,255)'})
                     }}
                     className="WorkHeadingImageContainer"
                 >
-                    <img 
+                    <AsyncImage 
                         src={require(`../assets/experience/work-${place}-logo.png`)}
-                        alt={place}
-                        className="WorkHeadingImage"
+                        style={{width:'100%',height:'100%'}}
+                        loader={<div/>}
+                        timeout={800}
                     />
                 </div>
                 <div className="WorkHeadingText">

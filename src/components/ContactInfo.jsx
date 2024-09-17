@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/ContactInfo.css'
 import picture from '../assets/me.jpg'
+import { AsyncImage } from "loadable-image";
 
 export default function ContactInfo(){
 
@@ -16,7 +17,12 @@ export default function ContactInfo(){
                 </ul>
             </div>
             <div className="ContactInfoPictureContainer">
-                <img src={picture} alt="lol" className="ContactInfoPicture"/>
+                <AsyncImage 
+                    src={picture}
+                    style={{width:'100%',height:'100%'}}
+                    loader={<div style={{background: 'rgba(220, 220, 220, 0.5)'}}/>}
+                    timeout={800}
+                />
             </div>
         </div>
     )

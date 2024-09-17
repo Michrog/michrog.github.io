@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/Project.css'
 import projects from '../assets/projects/projects.json'
+import { AsyncImage } from "loadable-image";
 
 export default function Project({project='5gth', imgColor='rgb(255,255,255)'}){
     const currentProject = projects[project]
@@ -26,16 +27,12 @@ export default function Project({project='5gth', imgColor='rgb(255,255,255)'}){
                         </p>
                     </div>
                 </div>
-                <div 
-                    style={{
-                        display: 'flex'
-                    }}
-                    className="ProjectHeadingImageContainer"
-                >
-                    <img 
+                <div className="ProjectHeadingImageContainer">
+                    <AsyncImage 
                         src={require(`../assets/projects/${project}.png`)}
-                        alt={project}
-                        className="ProjectHeadingImage"
+                        style={{width:'75%',height:'100%'}}
+                        loader={<div style={{background: imgColor}}/>}
+                        timeout={800}
                     />
                 </div>
             </div>

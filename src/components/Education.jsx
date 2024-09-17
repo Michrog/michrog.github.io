@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/Education.css'
 import schools from '../assets/education/education.json'
+import { AsyncImage } from "loadable-image";
 
 export default function Education({school='pwr', imgColor='rgb(255,255,255)'}){
     const currentSchool = schools[school]
@@ -18,10 +19,11 @@ export default function Education({school='pwr', imgColor='rgb(255,255,255)'}){
                     }}
                     className="EducationHeadingImageContainer"
                 >
-                    <img 
+                    <AsyncImage 
                         src={require(`../assets/education/${school}-logo.png`)}
-                        alt={school}
-                        className="EducationHeadingImage"
+                        style={{width:'100%',height:'100%'}}
+                        loader={<div/>}
+                        timeout={800}
                     />
                 </div>
                 <div className="EducationHeadingText">
