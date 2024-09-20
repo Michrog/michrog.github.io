@@ -7,7 +7,24 @@
             "Python",
             "PyQT6",
             "Numpy",
-            "3GPP specifications"
+            "3GPP specifications",
+            "Visual Studio Code"
+        ]
+    },
+    "website": {
+        "name": "This website",
+        "description": "My personal website.\n\nBefore going to college I learned basic web developement pipeline, that is HTML, CSS, JS and PHP but not much more due to how the times were back then. After finishing college and needing to find a job I decided to learn something. React seemed to be simple enough for a start and I was not mistaken. I read the whole official guide and created the project.\n\nThis projects is mainly to learn the basics and get familiar with the framework. I have encountered some difficulties such as assymetric tasks but there are tools to deal with such things so I'm not too worried.\n\nFirst thing I made was the cat section because I deemed less generic than what is already in my resume and more educational.\n\nI plan to add more things, more content, maybe change styles.",
+        "github": "https://github.com/Michrog/michrog.github.io",
+        "technologies": [
+            "React",
+            "HTML",
+            "CSS",
+            "JS / JSX",
+            "GitHub Pages",
+            "Visual Studio Code",
+            "npm",
+            "FontAwesome6",
+            "Chrome dev tools"
         ]
     }
 }

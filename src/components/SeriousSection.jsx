@@ -45,6 +45,7 @@ export default function SeriousSection(){
                 return (
                     <>
                         <Project project='5gth' imgColor="rgb(135, 151, 139, 0.2)"/>
+                        <Project project='website' imgColor="rgb(202, 242, 254, 0.7)"/>
                     </>
                 )
             default: 

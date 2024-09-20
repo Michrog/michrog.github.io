@@ -45,7 +45,7 @@
 }
 
 .chartPoly {
-    stroke: black;
+    stroke: grey;
     stroke-width: 0.2px;
     fill-opacity: 0;
     stroke-opacity: 0.3;

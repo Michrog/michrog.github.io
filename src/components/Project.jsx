@@ -51,7 +51,7 @@ export default function Project({project='5gth', imgColor='rgb(255,255,255)'}){
                             className="ProjectTechnologiesItem"
                             key={i+1}
                             style={{
-                                gridColumn: `${(i % gridRes) + 1} / ${freeSpaces > 0 && (i+1) === currentProject.info.length ? `span 2` : 'auto'}`,
+                                gridColumn: `${(i % gridRes) + 1} / ${freeSpaces > 0 && (i+1) === currentProject.technologies.length ? `span 2` : 'auto'}`,
                                 backgroundColor: imgColor
                             }}
                         >

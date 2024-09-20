@@ -1,0 +1,22 @@
+.lm {
+    color: black;
+    background-color: white;
+}
+.dm {
+    color: white;
+    background-color: black;
+}
+
+.lm_bg {
+    background-color: white;
+}
+.dm_bg {
+    background-color: black;    
+}
+
+.lm_text {
+    background-color: black;
+}
+.dm_text {
+    color: white  
+}

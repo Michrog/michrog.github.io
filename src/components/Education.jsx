@@ -1,13 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
 import '../styles/Education.css'
 import schools from '../assets/education/education.json'
 import { AsyncImage } from "loadable-image";
+import { DarkmodeContext } from "./context/DarkmodeContext";
 
 export default function Education({school='pwr', imgColor='rgb(255,255,255)'}){
     const currentSchool = schools[school]
     const gridRes = Math.ceil(currentSchool.info.length / 2)
     const gridRows = gridRes / (gridRes/2)
     const freeSpaces = ((gridRes * gridRows) - currentSchool.info.length)
+
+    const darkMode = useContext(DarkmodeContext)
 
     return (
         <div className="Education">

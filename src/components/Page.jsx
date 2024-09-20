@@ -1,17 +1,18 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import StateSwitch from "./StateSwitch";
 import PageSection from './PageSection'
 import '../styles/Page.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { DarkmodeContext } from "./context/DarkmodeContext";
 
 export default function Page(){
     const [section, setSection] = useState('serious')
-    const [darkMode, setDarkMode] = useState(false)
-    const darkModeIcon = darkMode ? <FontAwesomeIcon icon={faMoon}/> : <FontAwesomeIcon icon={faSun}/>
+    const dm = useContext(DarkmodeContext)
+    const darkModeIcon = dm.darkMode ? <FontAwesomeIcon icon={faMoon}/> : <FontAwesomeIcon icon={faSun}/>
 
     return (
-        <div className="Page">
+        <div className={`Page ${dm.darkMode ? '' : ''}`}>
             <hr />
             <div className="PageHead">
                 <StateSwitch 
@@ -22,9 +23,9 @@ export default function Page(){
                     width='20%'>
                 </StateSwitch>
                 <StateSwitch 
-                    state={darkMode} 
+                    state={dm.darkMode} 
                     states={[false, true]}
-                    onChangeState={setDarkMode}
+                    onChangeState={dm.handleDarkMode}
                     text={darkModeIcon}
                     width='5%'>
                 </StateSwitch>

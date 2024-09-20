@@ -1,12 +1,21 @@
+import React, {useState, useContext} from 'react';
 import './App.css';
+import './styles/Darkmode.css'
 import Page from './components/Page'
+import { DarkmodeContext } from "./components/context/DarkmodeContext";
 
-function App() {
+export default function App() {
+  const [darkMode, setDarkMode] = useState(false)
+  const value = {darkMode, handleDarkMode}
+
+  function handleDarkMode(dm){
+    setDarkMode(dm)
+    document.querySelector('body').className = `${dm ? 'dm' : 'lm'}`
+  }
+
   return (
-    <div>
+    <DarkmodeContext.Provider value={value}>
       <Page></Page>
-    </div>
+    </DarkmodeContext.Provider>
   );
 }
-
-export default App;
