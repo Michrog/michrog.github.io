@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.52bb81eb.css",
-    "main.js": "/static/js/main.61348bfc.js",
+    "main.css": "/static/css/main.e938081d.css",
+    "main.js": "/static/js/main.e8320054.js",
     "static/js/453.99dcf01f.chunk.js": "/static/js/453.99dcf01f.chunk.js",
     "static/media/sfinks4.jpg": "/static/media/sfinks4.bf15b17bb9e7d971b9bf.jpg",
     "static/media/mimi2.jpg": "/static/media/mimi2.88c0e038f461556bede8.jpg",
@@ -38,12 +38,12 @@
     "static/media/work-nokia-logo.png": "/static/media/work-nokia-logo.3bec868e63af61109e83.png",
     "static/media/zsge-logo.png": "/static/media/zsge-logo.3db0eb399c44e4f1c3c2.png",
     "index.html": "/index.html",
-    "main.52bb81eb.css.map": "/static/css/main.52bb81eb.css.map",
-    "main.61348bfc.js.map": "/static/js/main.61348bfc.js.map",
+    "main.e938081d.css.map": "/static/css/main.e938081d.css.map",
+    "main.e8320054.js.map": "/static/js/main.e8320054.js.map",
     "453.99dcf01f.chunk.js.map": "/static/js/453.99dcf01f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52bb81eb.css",
-    "static/js/main.61348bfc.js"
+    "static/css/main.e938081d.css",
+    "static/js/main.e8320054.js"
   ]
 }
