@@ -1,26 +1,16 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import '../styles/SeriousSection.css'
 import StateButton from './StateButton'
 import ContactInfo from "./ContactInfo";
 import Education from "./Education";
 import Experience from "./Experience";
 import Project from "./Project";
-// import getAverageRGB from "../utils/getAverageRGB";
-// import schools from '../assets/education/education.json'
+import { DarkmodeContext } from "./context/DarkmodeContext";
+import {dmstyle, lmstyle} from '../styles/themes.js'
 
 export default function SeriousSection(){
     const [seriousSection, setSeriousSection] = useState('contact')
-
-    // making colors is async so simply do it before the user goes to education
-    // inefficient
-    // const imgColors = Object.fromEntries(
-    //             Object.keys(schools).map(e => {
-    //                 const schoolImg = new Image()
-    //                 schoolImg.src = require(`../assets/education/${e}-logo.png`)
-    //                 const schoolImgRGB = getAverageRGB(schoolImg)
-    //                 return [e, `rgb(${schoolImgRGB.r},${schoolImgRGB.g},${schoolImgRGB.b})`]
-    //             })
-    //         )
+    const dm = useContext(DarkmodeContext).darkMode
 
     const section = (s) => {
         switch(s){
@@ -29,23 +19,21 @@ export default function SeriousSection(){
             case 'education':
                 return (
                     <>
-                        {/* <Education school="pwr" imgColor={imgColors['pwr']}/> */}
-                        {/* <Education school="zsge" imgColor={imgColors['zsge']}/> */}
-                        <Education school="pwr" imgColor='rgb(137, 66, 53, 0.2)'/>
-                        <Education school="zsge" imgColor='rgb(34, 67, 46, 0.2)'/>
+                        <Education school="pwr" imgColor='rgb(137, 66, 53, 0.5)'/>
+                        <Education school="zsge" imgColor='rgb(34, 67, 46, 0.5)'/>
                     </>
                 )
             case 'experience':
                 return (
                     <>
-                        <Experience place="nokia" imgColor="rgb(171, 200, 250, 0.4)"/>
+                        <Experience place="nokia" imgColor="rgb(171, 200, 250, 0.5)"/>
                     </>
                 )
             case 'projects':
                 return (
                     <>
-                        <Project project='5gth' imgColor="rgb(135, 151, 139, 0.2)"/>
-                        <Project project='website' imgColor="rgb(202, 242, 254, 0.7)"/>
+                        <Project project='5gth' imgColor="rgb(135, 151, 139, 0.5)"/>
+                        <Project project='website' imgColor="rgb(202, 242, 254, 0.5)"/>
                     </>
                 )
             default: 
@@ -56,7 +44,12 @@ export default function SeriousSection(){
     return (
         <div>
             <div className="SeriousSectionButtonsContainer">
-                <div className="SeriousSectionButtons">
+                <div 
+                    className="SeriousSectionButtons"
+                    style={{
+                        backgroundColor: dm ? dmstyle.secondary : lmstyle.secondary
+                    }}
+                >
                     <StateButton 
                         currentState={seriousSection} 
                         state='contact' 

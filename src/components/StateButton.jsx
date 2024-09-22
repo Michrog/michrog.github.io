@@ -1,18 +1,21 @@
 import React, {useContext} from "react";
 import '../styles/StateButton.css'
 import { DarkmodeContext } from "./context/DarkmodeContext";
+import {dmstyle, lmstyle} from '../styles/themes.js'
 
 export default function ComedySectionButton({currentState='', state, onChangeState, text=''}){
-    const activeStyle = {
-        fontWeight: currentState === state ? 'bold' : 'normal'
+    const dm = useContext(DarkmodeContext).darkMode
+    const style = {
+        fontWeight: currentState === state ? 'bold' : 'normal',
+        backgroundColor: `${dm ? dmstyle.main : lmstyle.main}`,
+        color: `${dm ? dmstyle.accent2 : lmstyle.accent2}`
     }
-    const dm = useContext(DarkmodeContext)
 
     return (
         <button 
-            className={`StateButton ${dm.darkMode ? 'dm' : 'lm'}`}
+            className={`StateButton`}
             onClick={() => onChangeState(state)}
-            style={activeStyle}
+            style={style}
         >
         {`${state} ${text}`}
         </button>

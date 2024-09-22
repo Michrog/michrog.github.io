@@ -1,7 +1,9 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import CatSection from './CatSection'
 import StateButton from './StateButton'
 import '../styles/ComedySection.css'
+import { DarkmodeContext } from "./context/DarkmodeContext";
+import {dmstyle, lmstyle} from '../styles/themes.js'
 
 export default function ComedySection(){
     const [comedySection, setComedySection] = useState('Cat')
@@ -16,9 +18,15 @@ export default function ComedySection(){
         default:
             section = <CatSection/>
     }
+    const dm = useContext(DarkmodeContext).darkMode
     return (
         <>
-            <div className="ComedySectionButtons">
+            <div 
+                className="ComedySectionButtons"
+                style={{
+                    backgroundColor: dm ? dmstyle.accent : lmstyle.accent
+                }}
+            >
                 <StateButton 
                     currentState={comedySection} 
                     state='Cat' 

@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useContext} from "react";
 import cats from "../assets/cats/cats.json"
 import '../styles/catDescription.css'
+import { DarkmodeContext } from "./context/DarkmodeContext";
+import {dmstyle, lmstyle} from '../styles/themes.js'
 
 export default function CatDescription({cat}){
     const currentCat = cats[cat]
@@ -31,6 +33,8 @@ export default function CatDescription({cat}){
     }
     const basePoints = baseHexPoints(10, 100, 100)
     const catPoints = catHexPoints(10, 100, 100, currentCat.attributes)
+   
+    const dm = useContext(DarkmodeContext).darkMode
 
     return (
         <div className="catDescriptionWrapper">
@@ -41,7 +45,17 @@ export default function CatDescription({cat}){
                     <div className="traitsWrapper">
                         {
                             currentCat.traits.map(trait => (
-                                <span className="trait">{trait.toUpperCase()}</span>
+                                <div 
+                                    className="trait"
+                                    style={{
+                                        backgroundImage: `linear-gradient(to right,
+                                            ${dm ? dmstyle.secondary_half : lmstyle.secondary_half},
+                                            ${dm ? dmstyle.accent_half : lmstyle.accent_half}                                        
+                                        )`
+                                    }}
+                                >
+                                    <span>{trait.toUpperCase()}</span>
+                                </div>
                             ))
                         }
                     </div>

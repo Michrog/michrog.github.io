@@ -90,10 +90,6 @@ svg text {
 }
 
 .trait {
-    background-image: linear-gradient(to right,
-     rgba(0, 0, 255, 0.2),
-     rgba(255, 0, 0, 0.2)
-     );
     padding: 0.4em;
     border-radius: 1em;
     font-family: Consolas,monospace;
