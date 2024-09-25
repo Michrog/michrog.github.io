@@ -24,7 +24,7 @@ export default function ComedySection(){
             <div 
                 className="ComedySectionButtons"
                 style={{
-                    backgroundColor: dm ? dmstyle.accent : lmstyle.accent
+                    backgroundColor: dm ? dmstyle.secondary : lmstyle.secondary
                 }}
             >
                 <StateButton 

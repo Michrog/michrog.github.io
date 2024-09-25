@@ -3,7 +3,7 @@ import '../styles/StateSwitch.css'
 import { DarkmodeContext } from "./context/DarkmodeContext";
 import {dmstyle, lmstyle} from '../styles/themes.js'
 
-export default function StateSwitch({state, states=['', ''], onChangeState, text='', width='20%'}){
+export default function StateSwitch({state, states=['', ''], onChangeState, text=''}){
     const nextState = state === states[0] ? states[1] : states[0]
     const currentClass = state === states[0] ? 'right' : 'left'
     const pelletClassName = `StateSwitchPellet ${currentClass}`
@@ -15,7 +15,6 @@ export default function StateSwitch({state, states=['', ''], onChangeState, text
             className='StateSwitch'
             onClick={() => onChangeState(nextState)}
             style={{
-                width: `max(2em, ${width})`,
                 backgroundColor: dm ? dmstyle.secondary : lmstyle.secondary
             }}
         >
@@ -28,7 +27,8 @@ export default function StateSwitch({state, states=['', ''], onChangeState, text
                 <div
                     className={pelletClassName}
                     style={{
-                        backgroundColor: dm ? dmstyle.main : lmstyle.main
+                        backgroundColor: dm ? dmstyle.main : lmstyle.main,
+                        color: dm ? dmstyle.accent2 : lmstyle.accent2
                     }}
                 >
                     <p className='StateSwitchPelletText'>

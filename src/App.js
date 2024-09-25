@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import './styles/Darkmode.css'
 import Page from './components/Page'

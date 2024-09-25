@@ -48,10 +48,7 @@ export default function CatDescription({cat}){
                                 <div 
                                     className="trait"
                                     style={{
-                                        backgroundImage: `linear-gradient(to right,
-                                            ${dm ? dmstyle.secondary_half : lmstyle.secondary_half},
-                                            ${dm ? dmstyle.accent_half : lmstyle.accent_half}                                        
-                                        )`
+                                        backgroundColor: dm ? dmstyle.accent_half : lmstyle.accent_half
                                     }}
                                 >
                                     <span>{trait.toUpperCase()}</span>

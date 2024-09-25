@@ -4,8 +4,6 @@
     background-color: grey;
     padding: 5px;
     border-radius: 1em;
-    margin-top: 2%;
-    margin-bottom: 2%;
     height: min-content
 }
 @media (hover: hover){

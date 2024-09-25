@@ -23,7 +23,7 @@ export default function CatSection(){
             <div 
                 className="CatButtons"
                 style={{
-                    backgroundColor: dm ? dmstyle.accent : lmstyle.accent
+                    backgroundColor: dm ? dmstyle.secondary : lmstyle.secondary
                 }}
             >
                 {Object.keys(cats).map(k => (
